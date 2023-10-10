@@ -1,0 +1,193 @@
+/*Autor: Jorge Marcelo
+Data de Criação: 10/10/2023
+Github: https://github.com/Jorge-Marcelo
+Linkedin: https://www.linkedin.com/in/jorge-marcelo-067a5017b/
+Instagram: https://www.instagram.com/10_stronger/
+Threads: https://www.threads.net/@10_stronger
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/*Configurações Globais*/
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-weight: 900;
+font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+background-color: rgb(72, 255, 0);
+}
+
+/*POsicionamento do container*/
+main {
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+/*Tamanho do Container*/
+section {
+width: 70vmin;
+height: 70vmin;
+display: flex;
+flex-wrap: wrap;
+gap: 2vmin;
+margin-top: 20px;
+}
+
+/*Textos*/
+h1 {
+font-size: 1.7em;
+}
+
+h2 {
+margin: 10px;
+
+font-size: 1.3em;
+}
+
+/*Local das jogadas*/
+.button-option {
+background: white;
+width: 22vmin;
+height: 22vmin;
+border: 3px solid black;
+border-radius: 10px;
+color: rgb(0, 255, 106);
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+font-size: 150px;
+}
+
+/*Botão de reset*/
+#reset {
+font-size: 1.7em;
+padding: 10px;
+border-radius: 10px;
+background-color: black;
+color: white;
+border: 2px solid white;
+margin: 1em auto 0 auto;
+display: block;
+position: relative;
+cursor: pointer;
+}
+
+#reset:hover {
+color: rgb(0, 255, 149);
+border-color: rgb(0, 255, 149);
+}
+
+/*Classes de redes sociais*/
+footer {
+font-size: 1.3em;
+color: rgb(0, 0, 0);
+border: none;
+margin: 1.5em auto 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+width: 350px;
+}
+
+.social {
+background: transparent;
+border: 3px solid rgb(0, 0, 0);
+background-color: white;
+transition: transform 0.3s ease-in-out;
+border-radius: 100%;
+margin: 0 7px;
+width: 50px;
+height: 50px;
+cursor: pointer;
+}
+
+.social:hover {
+background-color: rgb(0, 255, 128);
+transition: all 1s ease-in;
+transform: rotateY(360deg);
+}
+
+/*Container de New Game*/
+.new-game {
+background-color: rgb(72, 255, 0);
+height: 100%;
+width: 100%;
+position: absolute;
+display: flex;
+z-index: 2;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 1em;
+font-size: 12vmin;
+}
+
+.new-game.hide {
+display: none;
+}
+
+/*Botão de New Game*/
+#new-game {
+font-size: 0.6em;
+padding: 0.5em 1em;
+background-color: #0a0027;
+color: rgb(255, 255, 255);
+border-radius: 0.2em;
+border: none;
+cursor: pointer;
+border: 3px solid white;
+}
+
+#new-game:hover {
+background-color: rgb(0, 0, 0);
+color: rgb(0, 255, 149);
+border: 3px solid rgb(0, 255, 149);
+}
+
+/*Mensagem de vitoria ou empate*/
+#mensagem {
+color: #ffffff;
+text-align: center;
+font-size: 1em;
+}
+
+/*Responsividade*/
+@media (max-width: 720px) {
+.button-option {
+font-size: 130px;
+}
+}
+
+@media (max-width: 610px) {
+.button-option {
+font-size: 100px;
+}
+}
+
+@media (max-width: 490px) {
+.button-option {
+font-size: 80px;
+}
+}
+
+@media (max-width: 390px) {
+.button-option {
+font-size: 60px;
+}
+}
+
+@media (max-width: 310px) {
+.button-option {
+font-size: 50px;
+}
+}
