@@ -48,9 +48,9 @@ newGame.classList.add("hide");
 const mensagemVitoria = (letra) => {
 desabilitarBotoes();
 if (letra == "X") {
-mensagem.innerHTML = "O jogador Venceu";
+mensagem.innerHTML = "X Venceu";
 } else {
-mensagem.innerHTML = " A CPU Venceu";
+mensagem.innerHTML = " O Venceu";
 }
 };
 const empate = () => {
